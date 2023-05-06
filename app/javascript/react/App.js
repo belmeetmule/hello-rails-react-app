@@ -13,9 +13,6 @@ function App() {
         <Greeting />
       </header>
     </div>
-  //   <Routes>
-  //   <Route path="/" element={<Greeting />} />
-  // </Routes>
   );
 }
 
