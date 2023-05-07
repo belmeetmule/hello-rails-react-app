@@ -1,7 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  entry: './app/javascript/react/styles.scss',
+  mode: 'development', // or 'production'
+  entry: './app/javascript/main.css',
   output: {
     filename: 'main.css',
     path: path.resolve(__dirname, 'dist'),
@@ -9,14 +10,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.css$/,
         use: [
           // Creates `style` nodes from JS strings
           'style-loader',
           // Translates CSS into CommonJS
-          'css-loader',
+          'css-loader'
           // Compiles Sass to CSS
-          'sass-loader',
         ],
       },
     ],
