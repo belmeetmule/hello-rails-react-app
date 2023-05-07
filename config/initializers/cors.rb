@@ -1,6 +1,6 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
-    allow do
-      origins 'http://localhost:*' # Update with your frontend URL
-      resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
-    end
+  allow do
+    origins 'http://127.0.0.1:*' # Update with your frontend URL
+    resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
+end
