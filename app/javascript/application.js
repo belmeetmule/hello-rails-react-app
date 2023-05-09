@@ -1,3 +1,3 @@
-import "@hotwired/turbo-rails"
-import "./controllers"
-import "./react/index.js"
+import '@hotwired/turbo-rails';
+import './controllers';
+import './react/index';
